@@ -70,16 +70,31 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  
  RegisterNumber:24900193
 
- ![DE EXP 1(1)](https://github.com/user-attachments/assets/98cc10c4-d622-44a2-93d0-dc5a5f5182fb)
+ ```
+module logic_gates(a, b, c1, c2, c3, c4, c5, c6, c7);
+    input a, b;
+    output c1, c2, c3, c4, c5, c6, c7;
+
+    assign c1 = ~a;
+    assign c2 = a & b;
+    assign c3 = a | b;
+    assign c4 = ~(a & b);
+    assign c5 = ~(a | b);
+    assign c6 = a ^ b;
+    assign c7 = ~(a ^ b);
+endmodule
+```
 
  
 **Logic symbol & Truthtable**
 
 ![DE EXP 1(2)](https://github.com/user-attachments/assets/63487daf-e82b-428b-8525-d01d155632c8)
 
-![Screenshot 2024-11-26 180740](https://github.com/user-attachments/assets/8d60c58f-a576-4a63-9cea-9fab1abd7d1d)
 
 **RTL realization Output:** 
+
+![Screenshot 2024-11-26 180740](https://github.com/user-attachments/assets/8d60c58f-a576-4a63-9cea-9fab1abd7d1d)
+
 
 **RTL**
 
